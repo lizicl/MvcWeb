@@ -25,6 +25,7 @@ namespace MvcWeb.Models
 
         
         [Display(Name = "电话")]
+        [RegularExpression(@"^[0-9]*[1-9][0-9]*$", ErrorMessage = "请输入正确的电话")]
         [StringLength(13)]
         public string Phone { get; set; }
 
