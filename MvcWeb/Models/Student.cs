@@ -15,7 +15,7 @@ namespace MvcWeb.Models
         [Display(Name = "性别")]
         public string? Gender { get; set; }
         
-        [Range(1,200)]
+        [Range(0,200, ErrorMessage = "年龄在0-200")]
         [Display(Name = "年龄")]
         public int age { get; set; }
 
@@ -28,7 +28,7 @@ namespace MvcWeb.Models
         [StringLength(13)]
         public string Phone { get; set; }
 
-        [Range(30, 50)]
+        [Range(30, 50, ErrorMessage = "体温在30-50")]
         [Display(Name = "体温")]
         public double Temperature { get; set; }
 
