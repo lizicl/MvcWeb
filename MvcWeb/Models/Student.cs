@@ -23,7 +23,7 @@ namespace MvcWeb.Models
         [Display(Name = "出生日期")]
         public DateTime BirthDate { get; set; }
 
-        //[StringLength(13)]
+        [MaxLength(13)]
         [Display(Name = "电话")]
         [Column(TypeName = "varchar（30）")]
         public string Phone { get; set; }
