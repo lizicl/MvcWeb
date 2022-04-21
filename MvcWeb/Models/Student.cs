@@ -23,9 +23,9 @@ namespace MvcWeb.Models
         [Display(Name = "出生日期")]
         public DateTime BirthDate { get; set; }
 
-        [MaxLength(13)]
+        
         [Display(Name = "电话")]
-        [Column(TypeName = "varchar（30）")]
+        [StringLength(13)]
         public string Phone { get; set; }
 
         [Range(30, 50)]
